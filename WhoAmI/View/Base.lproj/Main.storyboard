@@ -54,13 +54,16 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clue Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7f-YQ-QZa">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="19.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="1hv-hH-GiK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjH-7r-x1h">
-                                        <rect key="frame" x="0.0" y="29.666666666666657" width="393" height="359.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="47" width="393" height="342"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>

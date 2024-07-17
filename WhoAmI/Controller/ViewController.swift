@@ -145,7 +145,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         cho2Btn.isHidden = false
         cho3Btn.isHidden = false
         
-        sLabel.text = "Clue: \(appM.clue + 1) (\(String(appM.whoAmIs[appM.person].personInfos.count)))"
+        sLabel.text = "Q-\(appM.person + 1) Clue: \(appM.clue + 1) (\(String(appM.whoAmIs[appM.person].personInfos.count)))"
         iLabel.text = appM.getClue()
         cho1Btn.setTitle(appM.btnAnswer, for: .normal)
         cho2Btn.setTitle(appM.btnNewClue, for: .normal)
@@ -166,7 +166,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 textP = "Your Answer is True"
             }
             else {
-                titleP = "Unfortinally"
+                titleP = "Unfortunately"
                 textP = "Your Answer is False"
             }
             
