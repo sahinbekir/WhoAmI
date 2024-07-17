@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhoAmI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="m54-sZ-AoN">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-VX-mup" userLabel="End Stack View">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-J5-acq">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="591"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gcM-H4-yYl">
+                                        <rect key="frame" x="0.0" y="611" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="8fK-3W-MCK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Your Answer" backgroundImage="redbg">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M3I-RR-75x">
+                                        <rect key="frame" x="0.0" y="695" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="os0-IU-mRv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True Answer" backgroundImage="greenbg">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vVh-kN-5wJ" userLabel="Main Stack View">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clue Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7f-YQ-QZa">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="19.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjH-7r-x1h">
+                                        <rect key="frame" x="0.0" y="29.666666666666657" width="393" height="359.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EHj-Dl-mkg">
+                                        <rect key="frame" x="0.0" y="399" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="OQT-Zc-Ml2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Confirm to Answer" backgroundImage="btnBG">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfh-jo-KLt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="to0-2B-dHL">
+                                        <rect key="frame" x="0.0" y="473" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="xwU-0g-H1R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Get New Clue" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YTL-74-5ZI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-wT-lAQ">
+                                        <rect key="frame" x="0.0" y="547" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="AQd-DR-L4O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Skip This" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKu-m2-MfK"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-l7-yoc">
+                                        <rect key="frame" x="0.0" y="621" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="yb8-hb-h4Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="P1b-X1-Faq">
+                                        <rect key="frame" x="0.0" y="695" width="393" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Wtq-ek-0xp"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="fQ1-2k-8Yu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Confirm Your Answer" backgroundImage="btnBG">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3h6-ut-fws"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m54-sZ-AoN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4vQ-gW-5O6"/>
+                            <constraint firstAttribute="trailing" secondItem="m54-sZ-AoN" secondAttribute="trailing" id="5VK-qz-Fps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HYZ-VX-mup" secondAttribute="trailing" id="8XR-ah-sBl"/>
+                            <constraint firstItem="m54-sZ-AoN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BKe-yf-dJI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HYZ-VX-mup" secondAttribute="bottom" id="GjK-ZJ-80u"/>
+                            <constraint firstAttribute="bottom" secondItem="m54-sZ-AoN" secondAttribute="bottom" id="MJy-2P-Row"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVh-kN-5wJ" secondAttribute="trailing" id="ReT-S4-ja1"/>
+                            <constraint firstItem="vVh-kN-5wJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SNF-nN-lnF"/>
+                            <constraint firstItem="HYZ-VX-mup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aSJ-Tf-GsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vVh-kN-5wJ" secondAttribute="bottom" id="hD7-6v-4cX"/>
+                            <constraint firstItem="HYZ-VX-mup" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vnX-Is-cH3"/>
+                            <constraint firstItem="vVh-kN-5wJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wxV-7B-pIQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accBtn" destination="P1b-X1-Faq" id="26k-kP-2ds"/>
+                        <outlet property="answerBtn" destination="gcM-H4-yYl" id="jmJ-Yd-MbL"/>
+                        <outlet property="cho1Btn" destination="EHj-Dl-mkg" id="DHD-gf-e1h"/>
+                        <outlet property="cho2Btn" destination="to0-2B-dHL" id="hJF-r2-6Zn"/>
+                        <outlet property="cho3Btn" destination="F9j-wT-lAQ" id="vvM-3y-zAy"/>
+                        <outlet property="iLabel" destination="CjH-7r-x1h" id="EDX-hr-eIA"/>
+                        <outlet property="imgAnswer" destination="9fc-J5-acq" id="8AG-ZC-pd9"/>
+                        <outlet property="sLabel" destination="a7f-YQ-QZa" id="l2a-Xv-rNR"/>
+                        <outlet property="textF" destination="5Nt-l7-yoc" id="lDO-XB-D4P"/>
+                        <outlet property="trueAnsBtn" destination="M3I-RR-75x" id="SLf-ao-gOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="btnBG" width="99.666664123535156" height="56"/>
+        <image name="choice1Background" width="1370.6666259765625" height="363"/>
+        <image name="choice2Background" width="1370.6666259765625" height="363"/>
+        <image name="greenbg" width="48.333332061767578" height="45.333332061767578"/>
+        <image name="redbg" width="63.666667938232422" height="59.666667938232422"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
